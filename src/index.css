@@ -1,0 +1,123 @@
+:root {
+  --white-color-100: #fff;
+  --black-color-100: #000;
+  --blue-color-100: #0000ff;
+  --green-color-100: #13d113;
+  --red-color-100: #ff0000;
+  --main-background: #10011d;
+  --sencondary-backgraund: rgba(82, 82, 82, 0.432);
+  --main-gradient: linear-gradient(
+    90deg,
+    rgba(32, 9, 51, 1) 0%,
+    rgba(130, 53, 89, 0.43) 35%,
+    rgba(36, 9, 51, 1) 100%
+  );
+  --main-font: 'poppins', sans-serif;
+  --secondary-font: 'Roboto Condensed';
+}
+h1 {
+  text-align: center;
+  font-family: var(--secondary-font);
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 70px;
+}
+p {
+  font-weight: 100;
+}
+
+div {
+  text-align: center;
+}
+body {
+  min-width: 450px;
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 0 10px;
+  background-color: var(--main-background);
+  color: var(--white-color-100);
+  font-family: var(--main-font);
+}
+ul > li {
+  list-style: none;
+}
+/* statistics section */
+.statistics-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.statistics-container > span {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.statistics-container > span > small {
+  font-size: 20px;
+  margin-left: 8px;
+  color: var(--blue-color-100);
+}
+
+/*FormItem Component*/
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}
+.form-input-addtodo {
+  width: 340px;
+  height: 36px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-submit-newtodo {
+  height: 38px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  background-color: var(--green-color-100);
+  color: var(--white-color-100);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+}
+
+/* TodoList Component */
+.todos-container {
+  min-height: 200px;
+  background: var(--main-gradient);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.list-container {
+  text-align: start;
+}
+.list-item {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.list-button_delete {
+  background-color: var(--red-color-100);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white-color-100);
+  border-radius: 10px;
+  border: none;
+}
+.list-button_done {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.todo-item {
+  font-family: var(--main-font);
+  font-weight: 100;
+}
+.middle-text-line {
+  text-decoration: line-through;
+}
